@@ -1,0 +1,17 @@
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\bin\Debug\net6.0-windows\FirstWindowsForm.exe
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\bin\Debug\net6.0-windows\FirstWindowsForm.deps.json
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\bin\Debug\net6.0-windows\FirstWindowsForm.runtimeconfig.json
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\bin\Debug\net6.0-windows\FirstWindowsForm.dll
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\bin\Debug\net6.0-windows\FirstWindowsForm.pdb
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.csproj.AssemblyReference.cache
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.Form1.resources
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.csproj.GenerateResource.cache
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.AssemblyInfoInputs.cache
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.AssemblyInfo.cs
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.csproj.CoreCompileInputs.cache
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.dll
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\refint\FirstWindowsForm.dll
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.pdb
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\FirstWindowsForm.genruntimeconfig.cache
+D:\Learning\Semester5\PRN211\Project\learning\FirstWindowsForm\obj\Debug\net6.0-windows\ref\FirstWindowsForm.dll
