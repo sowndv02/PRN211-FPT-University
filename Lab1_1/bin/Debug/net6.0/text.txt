@@ -1,0 +1,9 @@
+﻿1|A|900|Manager
+2|B|100|Developer
+3|C|200|Manager
+4|D|400|Developer
+5|E|600|Developer
+6|F|300|Tester
+7|G|700|Manager
+8|H|800|Tester
+9|J|1000|Manager

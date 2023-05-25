@@ -1,0 +1,15 @@
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.exe
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.deps.json
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.runtimeconfig.json
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.dll
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.pdb
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\DemoDelegate_Anonymous_Ex.csproj.AssemblyReference.cache
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\DemoDelegate_Anonymous_Ex.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\DemoDelegate_Anonymous_Ex.AssemblyInfoInputs.cache
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\DemoDelegate_Anonymous_Ex.AssemblyInfo.cs
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\DemoDelegate_Anonymous_Ex.csproj.CoreCompileInputs.cache
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\DemoDelegate_Anonymous_Ex.dll
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\refint\DemoDelegate_Anonymous_Ex.dll
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\DemoDelegate_Anonymous_Ex.pdb
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\DemoDelegate_Anonymous_Ex.genruntimeconfig.cache
+D:\Learning\Semester5\PRN211\Project\learning\DemoDelegate_Anonymous_Ex\obj\Debug\net6.0\ref\DemoDelegate_Anonymous_Ex.dll

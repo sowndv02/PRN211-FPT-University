@@ -1,0 +1,16 @@
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\bin\Debug\net6.0\Lab1_1.exe
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\bin\Debug\net6.0\Lab1_1.deps.json
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\bin\Debug\net6.0\Lab1_1.runtimeconfig.json
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\bin\Debug\net6.0\Lab1_1.dll
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\bin\Debug\net6.0\Lab1_1.pdb
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\Lab1_1.csproj.AssemblyReference.cache
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\Lab1_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\Lab1_1.AssemblyInfoInputs.cache
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\Lab1_1.AssemblyInfo.cs
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\Lab1_1.csproj.CoreCompileInputs.cache
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\Lab1_1.dll
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\refint\Lab1_1.dll
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\Lab1_1.pdb
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\Lab1_1.genruntimeconfig.cache
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\obj\Debug\net6.0\ref\Lab1_1.dll
+D:\Learning\Semester5\PRN211\Project\learning\Lab1_1\bin\Debug\net6.0\text.txt
