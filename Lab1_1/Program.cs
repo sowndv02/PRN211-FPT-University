@@ -18,23 +18,21 @@ namespace Lab1_1
                 {
                     case 1:
                         manager.SearchEmployeeByIdUsingMethod();
-                        manager.SearchEmployeeByIdUsingQuery();
                         break;
                     case 2:
                         manager.SearchEmployeeByNameUsingMethod();
-                        manager.SearchEmployeeByNameUsingQuery();
                         break;
                     case 3:
                         manager.SearchEmployeeByPositionUsingMethod();
-                        manager.SearchEmployeeByPositionUsingQuery();
                         break;
                     case 4:
                         manager.SearchEmployeeByBaseSalaryUsingMethod();
-                        manager.SearchEmployeeByBaseSalaryUsingQuery();
                         break;
                     case 5:
                         manager.SearchEmployeeByGetSalaryUsingMethod();
-                        manager.SearchEmployeeByGetSalaryUsingQuery();
+                        break;
+                    case 6:
+                        manager.Display();
                         break;
 
                 }

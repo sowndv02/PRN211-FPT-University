@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "DemoDelegate_Anonymous_Ex/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DemoDelegate_Anonymous_Ex.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DemoDelegate_Anonymous_Ex.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DemoDelegate_Anonymous_Ex/1.0.0": {
+      "type": "project",
+      "path": "../DemoDelegate_Anonymous_Ex/DemoDelegate_Anonymous_Ex.csproj",
+      "msbuildProject": "../DemoDelegate_Anonymous_Ex/DemoDelegate_Anonymous_Ex.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DemoDelegate_Anonymous_Ex >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Learning\\Semester5\\PRN211\\Project\\learning\\DemoDelegate_Anonymous_Ex\\DemoDelegate_Anonymous_Ex.csproj": {
+              "projectPath": "D:\\Learning\\Semester5\\PRN211\\Project\\learning\\DemoDelegate_Anonymous_Ex\\DemoDelegate_Anonymous_Ex.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

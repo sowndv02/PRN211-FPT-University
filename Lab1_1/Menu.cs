@@ -16,6 +16,7 @@ namespace Lab1_1
             opt.Add("Search Employee By Position.");
             opt.Add("Search Employee By baseSalary");
             opt.Add("Search Employee By GetSalary.");
+            opt.Add("Print.");
         }
         public void addNewOption(string option)
         {

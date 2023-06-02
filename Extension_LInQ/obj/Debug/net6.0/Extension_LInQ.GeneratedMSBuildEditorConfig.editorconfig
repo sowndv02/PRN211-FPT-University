@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Extension_LInQ
+build_property.RootNamespace = Extension_LinQ
 build_property.ProjectDir = D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\

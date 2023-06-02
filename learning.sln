@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoDelegate_Anonymous_Ex",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab1", "Lab1\Lab1.csproj", "{540B5B17-ED83-4950-B265-777AD70469C2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extension_LInQ", "Extension_LInQ\Extension_LInQ.csproj", "{E13A9A75-D1D4-4D11-AF28-EA6F6AB7DAC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extension_LinQ", "Extension_LInQ\Extension_LinQ.csproj", "{E13A9A75-D1D4-4D11-AF28-EA6F6AB7DAC5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab1_1", "Lab1_1\Lab1_1.csproj", "{A2633A25-12D0-4DD4-AA39-F08B1FB925C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWindowsForm", "FirstWindowsForm\FirstWindowsForm.csproj", "{E281A8D4-C7F5-4397-A54B-E4D1DA79D5CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstWindowsForm", "FirstWindowsForm\FirstWindowsForm.csproj", "{E281A8D4-C7F5-4397-A54B-E4D1DA79D5CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoADOModels", "DemoADOModels\DemoADOModels.csproj", "{97652CC0-82E1-4EAE-ACF3-217BB6D9BF96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{E281A8D4-C7F5-4397-A54B-E4D1DA79D5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E281A8D4-C7F5-4397-A54B-E4D1DA79D5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E281A8D4-C7F5-4397-A54B-E4D1DA79D5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97652CC0-82E1-4EAE-ACF3-217BB6D9BF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97652CC0-82E1-4EAE-ACF3-217BB6D9BF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97652CC0-82E1-4EAE-ACF3-217BB6D9BF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97652CC0-82E1-4EAE-ACF3-217BB6D9BF96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

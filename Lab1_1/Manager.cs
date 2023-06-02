@@ -186,12 +186,15 @@ namespace Lab1_1
             if (!position.Equals("Manager") && !position.Equals("Developer")) return baseSalary * 12;
             return baseSalary;
         }
+        double GetSalary2(double baseSalary, string s) {
+            return baseSalary * 1000000;
+        }
 
         public void Display()
         {
             foreach (Employee obj in employees)
             {
-                SalaryCalculation del = GetSalary;
+                SalaryCalculation del = GetSalary2;
                 obj.Display(del);
             }
         }

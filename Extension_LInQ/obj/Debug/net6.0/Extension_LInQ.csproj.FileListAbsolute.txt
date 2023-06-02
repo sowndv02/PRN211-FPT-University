@@ -1,0 +1,15 @@
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\Extension_LInQ.exe
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\Extension_LInQ.deps.json
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\Extension_LInQ.runtimeconfig.json
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\Extension_LInQ.dll
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\Extension_LInQ.pdb
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.csproj.AssemblyReference.cache
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.AssemblyInfoInputs.cache
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.AssemblyInfo.cs
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.csproj.CoreCompileInputs.cache
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.dll
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\refint\Extension_LInQ.dll
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.pdb
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.genruntimeconfig.cache
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\ref\Extension_LInQ.dll
