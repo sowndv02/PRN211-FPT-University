@@ -54,6 +54,7 @@ namespace DemoADOModels
                 Student curStudent = students[e.RowIndex];
                 frmEditStudent frmEditStudent = new frmEditStudent(curStudent);
                 frmEditStudent.FormClosed += frmEditForm_Close;
+                this.Hide();
                 frmEditStudent.Show();
             }
 
@@ -133,9 +134,10 @@ namespace DemoADOModels
 
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            frmAddStudent frmAddStudent = new frmAddStudent();
-            frmAddStudent.FormClosed += frmEditForm_Close;
-            frmAddStudent.Show();
+            frmEditStudent frmEditStudent = new frmEditStudent(null);
+            frmEditStudent.FormClosed += frmEditForm_Close;
+            this.Hide();
+            frmEditStudent.Show();
         }
 
         private void btnOther_Click(object sender, EventArgs e)
@@ -143,5 +145,11 @@ namespace DemoADOModels
             frmOtherType frmOtherType = new frmOtherType();
             frmOtherType.Show();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

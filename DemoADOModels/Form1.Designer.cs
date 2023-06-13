@@ -33,6 +33,7 @@
             label1 = new Label();
             btnAddStudent = new Button();
             btnOther = new Button();
+            btnExit = new Button();
             ((System.ComponentModel.ISupportInitialize)dtg1).BeginInit();
             SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             dtg1.Name = "dtg1";
             dtg1.RowHeadersWidth = 51;
             dtg1.RowTemplate.Height = 29;
-            dtg1.Size = new Size(971, 490);
+            dtg1.Size = new Size(1031, 491);
             dtg1.TabIndex = 0;
             dtg1.CellContentClick += dtg1_CellContentClick;
             // 
@@ -54,7 +55,7 @@
             // 
             tbSearch.Location = new Point(135, 31);
             tbSearch.Name = "tbSearch";
-            tbSearch.Size = new Size(438, 27);
+            tbSearch.Size = new Size(389, 27);
             tbSearch.TabIndex = 1;
             tbSearch.TextChanged += textBox1_TextChanged;
             // 
@@ -69,9 +70,9 @@
             // 
             // btnAddStudent
             // 
-            btnAddStudent.Location = new Point(806, 34);
+            btnAddStudent.Location = new Point(909, 31);
             btnAddStudent.Name = "btnAddStudent";
-            btnAddStudent.Size = new Size(177, 35);
+            btnAddStudent.Size = new Size(134, 43);
             btnAddStudent.TabIndex = 3;
             btnAddStudent.Text = "New Student";
             btnAddStudent.UseVisualStyleBackColor = true;
@@ -79,19 +80,30 @@
             // 
             // btnOther
             // 
-            btnOther.Location = new Point(639, 34);
+            btnOther.Location = new Point(703, 31);
             btnOther.Name = "btnOther";
-            btnOther.Size = new Size(143, 35);
+            btnOther.Size = new Size(153, 43);
             btnOther.TabIndex = 4;
             btnOther.Text = "OtherType";
             btnOther.UseVisualStyleBackColor = true;
             btnOther.Click += btnOther_Click;
             // 
+            // btnExit
+            // 
+            btnExit.Location = new Point(1066, 542);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(98, 36);
+            btnExit.TabIndex = 5;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(995, 589);
+            ClientSize = new Size(1176, 596);
+            Controls.Add(btnExit);
             Controls.Add(btnOther);
             Controls.Add(btnAddStudent);
             Controls.Add(label1);
@@ -112,5 +124,6 @@
         private Label label1;
         private Button btnAddStudent;
         private Button btnOther;
+        private Button btnExit;
     }
 }

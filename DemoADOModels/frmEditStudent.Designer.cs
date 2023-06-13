@@ -39,6 +39,7 @@
             tbMidName = new TextBox();
             tbLastName = new TextBox();
             btnUpdate = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -124,19 +125,30 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(273, 386);
+            btnUpdate.Location = new Point(115, 390);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(181, 40);
             btnUpdate.TabIndex = 10;
-            btnUpdate.Text = "Update";
+            btnUpdate.Text = "Save";
             btnUpdate.UseVisualStyleBackColor = true;
             btnUpdate.Click += btnUpdate_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(435, 390);
+            button1.Name = "button1";
+            button1.Size = new Size(181, 40);
+            button1.TabIndex = 11;
+            button1.Text = "Cancel";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // frmEditStudent
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(711, 594);
+            Controls.Add(button1);
             Controls.Add(btnUpdate);
             Controls.Add(tbLastName);
             Controls.Add(tbMidName);
@@ -168,5 +180,6 @@
         private TextBox tbMidName;
         private TextBox tbLastName;
         private Button btnUpdate;
+        private Button button1;
     }
 }

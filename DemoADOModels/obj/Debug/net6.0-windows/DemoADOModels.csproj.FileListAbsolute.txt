@@ -22,6 +22,5 @@ D:\Learning\Semester5\PRN211\Project\learning\DemoADOModels\obj\Debug\net6.0-win
 D:\Learning\Semester5\PRN211\Project\learning\DemoADOModels\obj\Debug\net6.0-windows\DemoADOModels.pdb
 D:\Learning\Semester5\PRN211\Project\learning\DemoADOModels\obj\Debug\net6.0-windows\DemoADOModels.genruntimeconfig.cache
 D:\Learning\Semester5\PRN211\Project\learning\DemoADOModels\obj\Debug\net6.0-windows\ref\DemoADOModels.dll
-D:\Learning\Semester5\PRN211\Project\learning\DemoADOModels\obj\Debug\net6.0-windows\DemoADOModels.frmAddStudent.resources
 D:\Learning\Semester5\PRN211\Project\learning\DemoADOModels\obj\Debug\net6.0-windows\DemoADOModels.frmEditStudent.resources
 D:\Learning\Semester5\PRN211\Project\learning\DemoADOModels\obj\Debug\net6.0-windows\DemoADOModels.frmOtherType.resources

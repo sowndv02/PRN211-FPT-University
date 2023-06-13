@@ -80,37 +80,61 @@ namespace DemoADOModels
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Student student = new Student(
+
+            if ( string.IsNullOrEmpty(tbFirstName.Text.Trim()) && string.IsNullOrEmpty(tbMidName.Text.Trim()) && string.IsNullOrEmpty(tbMidName.Text.Trim()) && string.IsNullOrEmpty(tbLastName.Text.Trim()))
+            {
+                MessageBox.Show("Please fill input");
+            }
+            else
+            {
+                Student student = new Student(
                 tbRoll.Text,
                 tbFirstName.Text,
                 tbMidName.Text,
                 tbLastName.Text
                 );
-            int count = StudentDAO.AddStudent(student);
-            if (count > 0)
-                MessageBox.Show("Add Successful!");
-            else MessageBox.Show("Add Error");
+                int count = StudentDAO.AddStudent(student);
+                if (count > 0)
+                    MessageBox.Show("Add Successful!");
+                else MessageBox.Show("Add Error");
+                LoadStudent();
+            }
+            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Student student = new Student(
-                Convert.ToInt32(tbStudentId.Text),
-                tbRoll.Text,
-                tbFirstName.Text,
-                tbMidName.Text,
-                tbLastName.Text
-                );
+            if ( string.IsNullOrEmpty(tbFirstName.Text.Trim())
+                && string.IsNullOrEmpty(tbMidName.Text.Trim()) && string.IsNullOrEmpty(tbMidName.Text.Trim())
+                && string.IsNullOrEmpty(tbLastName.Text.Trim()))
+            {
+                MessageBox.Show("Please fill input");
+            }
+            else
+            {
+                Student student = new Student(
+                                Convert.ToInt32(tbStudentId.Text),
+                                tbRoll.Text,
+                                tbFirstName.Text,
+                                tbMidName.Text,
+                                tbLastName.Text
+                                );
 
-            int count = StudentDAO.UpdateStudent(student);
-            if (count > 0)
-                MessageBox.Show("Edit Successful!");
-            else MessageBox.Show("Edit Error");
-            LoadStudent();
+                int count = StudentDAO.UpdateStudent(student);
+                if (count > 0)
+                    MessageBox.Show("Edit Successful!");
+                else MessageBox.Show("Edit Error");
+                LoadStudent();
+            }
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(tbStudentId.Text))
+            {
+                MessageBox.Show("Please choose student");
+            }
             int sid = Convert.ToInt32(tbStudentId.Text);
             DialogResult result = MessageBox.Show($"You want delete {tbFirstName.Text} {tbMidName.Text} {tbLastName.Text}?", "Confirm", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
