@@ -1,0 +1,30 @@
+﻿@{
+}
+
+@using DemoASPWithEntityFramework.Models
+@model List<Student>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/Course/List">Go Home</a>
+    <h3>Add Student for Course @ViewBag.Course.CourseCode</h3>
+    <form action="/Course/AddStudent" method="Post">
+        <input name="courseId" value="@ViewBag.Course.CourseId" type="hidden" />
+        <h3>List Student</h3>
+        @foreach(Student s in Model)
+        {
+            <input type="checkbox" value="@s.StudentId" name="selectedStudents" />@s.FirstName @s.LastName<br/>
+        }
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+

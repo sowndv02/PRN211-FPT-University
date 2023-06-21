@@ -1,0 +1,37 @@
+﻿
+@{
+}
+
+@using DemoASPWithEntityFramework.Models
+@model Course
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/Course/List">Go Home</a>
+    <h3>Course's' Info</h3>
+    <form action="/Course/DoEdit" method="Post">
+        CourseId <input name="course.CourseId" value="@Model.CourseId" readonly /><br />
+        CourseCode <input value="@Model.CourseCode" name="course.CourseCode" /><br />
+        CourseDescription <input value="@Model.CourseDescription" name="course.CourseDescription" /><br />
+        Subject <select name="course.SubjectId">
+            @foreach(Subject s in ViewBag.Subject)
+            {
+                <option @(s.SubjectId == Model.SubjectId ? "selected" : "") value="@s.SubjectId">@s.SubjectName</option>
+            }
+        </select><br />
+        Instructor <select name="course.InstructorId">
+            @foreach (Instructor i in ViewBag.Instructor)
+            {
+                <option @(i.InstructorId== Model.InstructorId ? " selected":"") value="@i.InstructorId">@i.InstructorFirstName @i.InstructorLastName</option>
+            }
+        </select><br />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+

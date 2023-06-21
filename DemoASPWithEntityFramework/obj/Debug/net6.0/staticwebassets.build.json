@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QZz2jGMADuxebL1gN+quLE4h5m1VI60xMUbNtIUrtDI=",
+  "Source": "DemoASPWithEntityFramework",
+  "BasePath": "_content/DemoASPWithEntityFramework",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

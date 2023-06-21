@@ -33,9 +33,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning\\Semester5\\PRN211\\Project\\learning\\Extension_LInQ\\Extension_LInQ.csproj",
-      "projectName": "Extension_LInQ",
-      "projectPath": "D:\\Learning\\Semester5\\PRN211\\Project\\learning\\Extension_LInQ\\Extension_LInQ.csproj",
+      "projectUniqueName": "D:\\Learning\\Semester5\\PRN211\\Project\\learning\\Extension_LInQ\\Extension_LinQ.csproj",
+      "projectName": "Extension_LinQ",
+      "projectPath": "D:\\Learning\\Semester5\\PRN211\\Project\\learning\\Extension_LInQ\\Extension_LinQ.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
       "outputPath": "D:\\Learning\\Semester5\\PRN211\\Project\\learning\\Extension_LInQ\\obj\\",
       "projectStyle": "PackageReference",
@@ -89,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

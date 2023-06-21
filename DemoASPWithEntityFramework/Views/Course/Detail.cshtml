@@ -1,0 +1,35 @@
+﻿
+@using DemoASPWithEntityFramework.Models
+@model Course
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/Course/List">Go Home</a>
+    <h3>Course's' Info</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>CourseId</td>
+                <td>CourseCode</td>
+                <td>CourseDescription</td>
+                <td>Subject</td>
+                <td>Instructor</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.CourseId</td>
+                <td>@Model.CourseCode</td>
+                <td>@Model.CourseDescription</td>
+                <td>@ViewData["subjectName"]</td>
+                <td>ViewBag.instructor.LastName ViewBag.instructor.InstructorFirstName</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
