@@ -99,7 +99,12 @@ namespace DemoASPWithEntityFramework.Controllers
             using(var context = new APDatabaseContext())
             {
                 Course old = context.Courses.Where(x => x.CourseId ==course.CourseId).FirstOrDefault();
-                old = course;
+
+                old.InstructorId = course.InstructorId;
+                old.SubjectId = course.SubjectId;
+                old.CourseCode = course.CourseCode; 
+                old.CourseDescription = course.CourseDescription;   
+
                 context.SaveChanges();
                 return Redirect("/Course/List");
             }
@@ -108,23 +113,38 @@ namespace DemoASPWithEntityFramework.Controllers
 
         public IActionResult DoDelete(int id)
         {
-            using(var context = new APDatabaseContext())
+            using (var context = new APDatabaseContext())
             {
-                Course course = context.Courses.Where(x => x.CourseId == id).FirstOrDefault();
-                course.Students.Clear();
-                context.Courses.Remove(course);
-                List<CourseSchedule> courseSchedules = context.CourseSchedules.Where(x => x.CourseId==id).ToList();
-                foreach(CourseSchedule schedule in courseSchedules)
-                {
-                    List<RollCallBook> rollCallBooks = context.RollCallBooks.Where(x => x.TeachingScheduleId == schedule.TeachingScheduleId).ToList();
-                    context.RollCallBooks.RemoveRange(rollCallBooks);
-                }
-                context.CourseSchedules.RemoveRange(courseSchedules);
+                Course course = context.Courses
+                    .Include(c => c.Students)
+                    .FirstOrDefault(x => x.CourseId == id);
 
-                context.SaveChanges();
+                if (course != null)
+                {
+                    course.Students.Clear();
+
+                    List<CourseSchedule> courseSchedules = context.CourseSchedules
+                        .Where(x => x.CourseId == id)
+                        .ToList();
+
+                    foreach (CourseSchedule schedule in courseSchedules)
+                    {
+                        List<RollCallBook> rollCallBooks = context.RollCallBooks
+                            .Where(x => x.TeachingScheduleId == schedule.TeachingScheduleId)
+                            .ToList();
+
+                        context.RollCallBooks.RemoveRange(rollCallBooks);
+                    }
+
+                    context.CourseSchedules.RemoveRange(courseSchedules);
+                    context.Courses.Remove(course);
+                    context.SaveChanges();
+                }
+
                 return Redirect("/Course/List");
             }
         }
+
 
     }
 }
