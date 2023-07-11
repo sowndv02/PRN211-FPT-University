@@ -1,0 +1,79 @@
+﻿@using Lab3.Models
+@model List<Product>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List product</title>
+    <style>
+        .pager {
+            margin-top: 10px;
+        }
+
+        .active {
+            color: yellow;
+            background-color: blue
+        }
+    </style>
+</head>
+<body>
+    <div style="float:left; width: 55%">
+        <h3><a href="/product/Cart">Cart</a></h3>
+        <br />
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="/Product/index">All Category</a></li>
+            @foreach (Category s in ViewBag.categories)
+            {
+                <li><a href="/Product/index/@s.CategoryId">@s.CategoryName</a></li>
+            }
+        </ul>
+    </div>
+    <div style="float:right; width: 45%">
+        <h3>Danh sách sản phẩm</h3>
+        @if (Model is null || Model.Count == 0)
+        {
+            <h3>Không có sản phẩm nào theo yêu cầu</h3>
+        }
+        else
+        {
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>Thông tin</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Product c in Model)
+                    {
+                        <tr>
+                            <td>@c.ProductId - @c.ProductName - @c.UnitPrice</td>
+                            <td>
+                                <form action="/product/AddToCart" method="POST">
+                                    <input type="hidden" name="productId" value="@c.ProductId" />
+                                    <input type="number" name="number" value="1" min="1" max="@c.UnitsInStock" />
+                                    <button type="submit">Thêm vào giỏ hàng</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        }
+        <div class="pager">
+            @if ((int)ViewData["totalPage"] > 1)
+            {
+                @for (int i = 1; i < (int)ViewData["totalPage"]; i++)
+                {
+                    <a class="@((int)ViewData["currentPage"] == i ? "active" :"")" href="/Product/Index/@ViewData["currentCateId"]/@i">@i</a>
+                }
+            }
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿@using Lab3.Models
+@model List<ShoppingCartItem>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List product</title>
+</head>
+<body>
+    
+    <div style="">
+        <h3><a href="/Product/List">Trang chủ</a></h3>
+        <h3>Danh sách sản phẩm</h3>
+        @if (Model is null || Model.Count == 0)
+        {
+            <h3>Không có sản phẩm nào theo yêu cầu</h3>
+        }
+        else
+        {
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>Thông tin</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                        <td></td>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ShoppingCartItem c in Model)
+                    {
+                        <tr>
+                            <td>@c.ProductId - @c.ProductName - @c.UnitPrice - @c.Discount</td>
+                            <td>@c.Quantity</td>
+                            <td>@(c.TotalMoney.ToString("0.00"))</td>
+                            <td>
+                                <form action="/ShoppingCart/Remove" method="POST">
+                                    <input type="hidden" value="@c.ProductId" name="productId"/>
+                                    <button>Remove</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a href="/ShoppingCart/ConfirmInformation">CheckOut</a>
+
+        }
+        
+    </div>
+</body>
+</html>
