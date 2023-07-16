@@ -1,0 +1,47 @@
+﻿@using Q3_Spring23.Models
+@model List<Student>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of students</h1>
+    <form action="/Student/List" method="Post">
+        <select onchange="this.form.submit()" name="id">
+            @foreach (string g in ViewBag.genders)
+            {
+                <option @(((string)ViewBag.id).Equals(g.ToLower()) ? "selected" :"") value="@g.ToLower()">@g</option>
+            }
+        </select>
+    </form><br/>
+
+    <table>
+        <thead>
+            <tr>
+                <td>FullName</td>
+                <td>Sex</td>
+                <td>Dob</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Student s in Model)
+            {
+                <tr>
+                    <td>@s.FullName</td>
+                    <td>@s.Sex</td>
+                    <td>
+                        @s.Dob?.ToString("dd/MM/yyyy")
+                    </td>
+                    <td>@s.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

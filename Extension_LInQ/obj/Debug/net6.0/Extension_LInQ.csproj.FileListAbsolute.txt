@@ -13,3 +13,9 @@ D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\re
 D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.pdb
 D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LInQ.genruntimeconfig.cache
 D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\ref\Extension_LInQ.dll
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.deps.json
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.runtimeconfig.json
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.exe
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.dll
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\bin\Debug\net6.0\DemoDelegate_Anonymous_Ex.pdb
+D:\Learning\Semester5\PRN211\Project\learning\Extension_LInQ\obj\Debug\net6.0\Extension_LinQ.csproj.CopyComplete

@@ -1,0 +1,64 @@
+﻿
+@{
+}
+
+@using Q3_SamplePE_BySon_Version2.Models
+@model Course
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/Course/List">Go Home</a>
+    <h3>Course's' Info</h3>
+
+    <form action="/Course/DoEdit" method="post">
+        <div>
+            <label for="courseId">Course ID:</label>
+            <input type="text" id="courseId" name="course.CourseId" value="@Model.CourseId" readonly />
+        </div>
+        <div>
+            <label for="courseCode">Course Code:</label>
+            <input type="text" id="courseCode" name="course.CourseCode" value="@Model.CourseCode" />
+        </div>
+        <div>
+            <label for="courseDesc">Course Description:</label>
+            <input type="text" id="courseDesc" name="course.CourseDescription" value="@Model.CourseDescription" />
+        </div>
+        <div>
+            <label for="subject">Subject:</label>
+            <select id="subject" name="course.SubjectId">
+                @foreach (Subject s in ViewBag.Subject)
+                {
+                    <option @(s.SubjectId == Model.SubjectId ? "selected" : "") value="@s.SubjectId">@s.SubjectName</option>
+                }
+            </select>
+        </div>
+        <div>
+            <label for="instructor">Instructor:</label>
+            <select id="instructor" name="course.InstructorId">
+                @foreach (Instructor i in ViewBag.Instructor)
+                {
+                    <option @(i.InstructorId == Model.InstructorId ? "selected" : "") value="@i.InstructorId">@i.InstructorFirstName @i.InstructorLastName</option>
+                }
+            </select>
+        </div>
+        <div>
+            <label>Students:</label>
+            @foreach (Student s in ViewBag.Students)
+            {
+                bool isChecked = Model.Students.Any(st => st.StudentId == s.StudentId);
+                <div>
+                    <input type="checkbox" name="studentIds" value="@s.StudentId" @(isChecked ? "checked" : "") />
+                    <label>@s.FirstName @s.LastName</label>
+                </div>
+            }
+        </div>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
+

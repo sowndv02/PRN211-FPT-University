@@ -1,0 +1,37 @@
+﻿@using Q3_SamplePE_Fall21B5.Models
+@model List<Employee>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of Employees</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Sex</td>
+                <td>Position</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Employee e in Model)
+            {
+                <tr>
+                    <td>@e.Name</td>
+                    <td>@e.Sex</td>
+                    <td>@e.Position</td>
+                    <td><a href="/Employee/Delete/@e.Id">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+
+

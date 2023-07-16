@@ -1,0 +1,58 @@
+﻿@using Q2_Fall22.Models
+@model List<Movie>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of movies</h1>
+    <div style="float: left; width: 15%">
+        <h3 style="font-weight: bold">Directors</h3><br />
+        @foreach (Director d in ViewBag.directors)
+        {
+            <a href="/Movies/Director_Movies/@d.Id" style="font-weight: @( (int)ViewData["id"] == d.Id ? "bold" : "")">@d.FullName</a>
+
+            <br />
+        }
+    </div>
+    <div style="float: right; width: 85%">
+        <table >
+            <thead style="font-weight:bold">
+                <tr>
+                    <td>Title</td>
+                    <td>ReleaseDate</td>
+                    <td>Description</td>
+                    <td>Language</td>
+                    <td>Director</td>
+                    <td>Produces</td>
+                    <td>Genres</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(Movie m in Model)
+                {
+                    <tr>
+                        <td>@m.Title</td>
+                        <td>@m.ReleaseDate</td>
+                        <td>@m.Description</td>
+                        <td>@m.Language</td>
+                        <td>@m.Director.FullName</td>
+                        <td>@m.Producer.Name</td>
+                        <td>
+                            @foreach (Genre g in @m.Genres)
+                            {
+                                <p>@g.Title</p><a href="/Movies/Remove/@ViewData["id"]/@m.Id/@g.Id"> Remove</a> <br/>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

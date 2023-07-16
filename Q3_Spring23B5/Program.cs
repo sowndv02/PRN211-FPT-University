@@ -1,0 +1,18 @@
+using Microsoft.AspNetCore.Builder;
+
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllersWithViews();
+var app = builder.Build();
+
+app.MapGet("/", () => "Hello World!");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller}/{action}/{major?}/{gender?}/{orderby?}");
+
+
+
+
+app.Run();
+
+

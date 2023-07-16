@@ -6,15 +6,28 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Extension_LInQ/1.0.0": {
+      "Extension_LinQ/1.0.0": {
+        "dependencies": {
+          "DemoDelegate_Anonymous_Ex": "1.0.0"
+        },
         "runtime": {
-          "Extension_LInQ.dll": {}
+          "Extension_LinQ.dll": {}
+        }
+      },
+      "DemoDelegate_Anonymous_Ex/1.0.0": {
+        "runtime": {
+          "DemoDelegate_Anonymous_Ex.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Extension_LInQ/1.0.0": {
+    "Extension_LinQ/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DemoDelegate_Anonymous_Ex/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

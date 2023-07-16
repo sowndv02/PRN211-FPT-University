@@ -1,0 +1,44 @@
+﻿@using Q3_SamplePE_BySon_Version2.Models
+@model List<Course>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="float:left; width: 65%">
+        <h3>Subjects</h3>
+        <a href="/Course/Add">Add new Course</a>
+        <ul>
+            <li><a href="">All subject</a></li>
+            @foreach(Subject s in ViewBag.Subjects)
+            {
+                <li><a href="/Course/List/@s.SubjectId">@s.SubjectName</a></li>
+            }
+        </ul>
+    </div>
+    <div style="float:right; width: 35%">
+        <h3>List of all courses(in all subjects)</h3>
+        @if(Model is null)
+        {
+            <h3>Không có course nào</h3>
+        }
+        else
+        {
+            foreach(Course c in Model)
+            {
+                <table>
+                    <tr>
+                        <td>@c.CourseCode-@c.CourseDescription</td>
+                        <td><a href="/Course/Detail/@c.CourseId">Go Detail</a></td>
+                        <td><a href="/Course/Edit/@c.CourseId">Edit</a></td>
+                        <td><a href="/Course/DoDelete/@c.CourseId">Delete</a></td>
+                    </tr>
+                </table>
+            }
+        }
+    </div>
+</body>
+</html>

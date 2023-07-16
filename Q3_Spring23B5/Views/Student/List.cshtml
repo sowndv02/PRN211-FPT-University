@@ -1,0 +1,38 @@
+﻿@using Q3_Spring23B5.Models
+@model List<Student>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/Student/List" method="POST">
+        Major 
+        <select name="major">
+            @foreach(Major m in ViewBag.majors)
+            {
+                <option @(ViewBag.major.Equals(m.Code) ? "selected": "") value="@m.Code">@m.Title</option>
+            }
+        </select>
+        &nbsp;&nbsp;&nbsp;Gender 
+        <select name="gender">
+            <option @(ViewBag.gender.Equals("1") ? "selected" : "") value="1">Male</option>
+            <option @(ViewBag.gender.Equals("0") ? "selected" : "") value="0">Female</option>
+        </select>
+        <br />
+        Sortby: <input @(ViewBag.orderby.Equals("Name") ? "checked" : "") type="radio" name="orderby" value="Name" /> StudentName
+        <input @(ViewBag.orderby.Equals("Id") ? "checked" : "") type="radio" name="orderby" value="Id" /> StudentId
+        <input @(ViewBag.orderby.Equals("Dob") ? "checked" : "") type="radio" name="orderby" value="Dob" /> StudentDob <br />
+        <button type="submit">Filter</button>
+    </form>
+    <h1>List of Students</h1>
+    @foreach(Student s in Model)
+    {
+        <p>@s.Id-@s.Name-@s.MajorNavigation.Title-@s.Dob.ToString("dd/MM/yyyy")</p>
+    }
+</body>
+</html>
+

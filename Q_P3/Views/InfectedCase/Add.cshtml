@@ -1,0 +1,74 @@
+﻿
+@using Q2_P3.Models
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/InfectedCase/Add" method="Post">
+        Name: <input type="text" name="infectedcase.Name" />
+        <asp:RequiredFieldValidator runat="server" ControlToValidate="infectedcase.Name" ErrorMessage="Name is required" />
+        <br />
+        Age: <input type="text" name="infectedcase.Age" />
+        <asp:RangeValidator runat="server" ControlToValidate="infectedcase.Age" Type="Integer" MinimumValue="0" MaximumValue="120" ErrorMessage="Age must be between 0 and 120" />
+        <br />
+        Sex: <input type="radio" name="infectedcase.Sex" value="true" />Nam &nbsp;
+        <input type="radio" name="infectedcase.Sex" value="false" />Nữ
+        <br />
+        Nationality: 
+        <select name="infectedcase.Nationality">
+            @foreach(string na in ViewBag.nationality)
+            {
+                <option value="@na">@na</option>
+            }
+        </select><br/>
+        Province: 
+        <select id="provice"  name="infectedcase.Province">
+            @foreach (string pro in ViewBag.province)
+            {
+                <option value="@pro">@pro</option>
+            }
+        </select>
+        <br/>
+        Traveled From: <input onchange="CheckTraveled()" id="travel" type="text" name="infectedcase.TraveledFrom" /> &nbsp; <input onchange="CheckTraveled()" id="notravel" type="checkbox" name="" /> No international travel record <br />
+        Related To: 
+        <select onchange="CheckRelated()" id="related">
+            @foreach (InfectedCase related in ViewBag.related)
+            {
+                <option value="@related.Id">@related.Name</option>
+            }
+        </select> <input onchange="CheckRelated()" id="norelated" name="" type="checkbox" /> Not related to anyone <br />
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function CheckTraveled() {
+            var notravel = document.getElementById('notravel');
+            var travel = document.getElementById('travel');
+            travel.disabled = notravel.checked;
+            if (travel.value !== '') {
+                notravel.checked = false;
+                notravel.disabled = true;
+            } else {
+                notravel.disabled = false;
+            }
+            if (notravel.checked){
+                travel.disable = true;
+            }else{
+                travel.disable = false;
+            }
+        }
+
+        function CheckRelated() {
+            var norelated = document.getElementById('norelated');
+            var related = document.getElementById('related');
+
+            related.disabled = norelated.checked;
+        }
+    </script>
+</body>
+</html>
+

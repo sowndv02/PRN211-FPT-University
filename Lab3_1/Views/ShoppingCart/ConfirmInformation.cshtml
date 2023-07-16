@@ -1,0 +1,82 @@
+﻿@using Lab3.Models
+@model List<ShoppingCartItem>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+</head>
+<body>
+    <h3><a href="/Product/List">Trang chủ</a></h3>
+    <h3><a href="/ShoppingCart/Cart">Cart</a></h3>
+    <div style="float:left; width: 55%">
+
+        <form action="/ShoppingCart/CheckOut" method="post">
+            <label for="requiredDate">RequiredDate: </label><input id="requiredDate" type="date" min="" name="order.RequiredDate" /><br />
+            <label for="shipVia">ShipVia: </label>
+            <select id="shipVia" name="order.ShipVia">
+                @foreach (Shipper s in ViewBag.shippers)
+                {
+                    <option value="@s.ShipperId">@s.CompanyName</option>
+                }
+            </select><br />
+            <label for="employee">Employee:</label>
+            <select id="employee" name="order.EmployeeId">
+                @foreach(Employee e in ViewBag.employees)
+                {
+                    <option value="@e.EmployeeId"> @e.FirstName @e.LastName</option>
+                }
+            </select><br />
+            <label for="shipName">ShipName: </label> <input id="shipName" type="text" name="order.ShipName" /><br />
+            <label for="shipAddress">ShipAddress: </label><input type="text" id="shipAddress" name="order.ShipAddress" /><br />
+            <label for="shipCity">ShipCity: </label><input id="shipCity" type="text" name="order.ShipCity" /><br />
+            <label for="shipRegion">ShipRegion: </label><input type="text" id="shipRegion" name="order.ShipRegion" /><br />
+            <label id="shipPostalCode">ShipPostalCode: </label><input id="shipPostalCode" type="text" name="order.ShipPostalCode" /><br />
+            <label for="shipCountry">ShipCountry: </label><input id="shipCountry" type="text" name="order.ShipCountry" /><br />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div style="float:right; width: 45%">
+        
+        <h3>Danh sách sản phẩm</h3>
+        @if (Model is null || Model.Count == 0)
+        {
+            <h3>Không có sản phẩm nào theo yêu cầu</h3>
+        }
+        else
+        {
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>Thông tin</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ShoppingCartItem c in Model)
+                    {
+                        <tr>
+                            <td>@c.ProductId - @c.ProductName - @c.UnitPrice - @c.Discount</td>
+                            <td>@c.Quantity</td>
+                            <td>@(c.TotalMoney.ToString("0.00"))</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <h4>Tổng tiền: @Model.Sum(x => x.TotalMoney).ToString("0.00")</h4>
+        }
+
+    </div>
+    <script>
+        var requiredDateInput = document.getElementById('requiredDate');
+        var currentDate = new Date();
+        currentDate.setDate(currentDate.getDate() + 3);
+        var minDate = currentDate.toISOString().split('T')[0];
+        requiredDateInput.min = minDate;
+    </script>
+</body>
+</html>
