@@ -1,4 +1,4 @@
-# Learning PRN211 FPT University
+# Learning PRN211 FPT University (C#)
 # Console App
 # Windows Form
 # ASP .NET 
